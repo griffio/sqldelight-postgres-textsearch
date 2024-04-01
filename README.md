@@ -4,9 +4,9 @@ https://github.com/cashapp/sqldelight
 
 Snapshot version: 2.1.0-SNAPSHOT
 
-Support TSVECTOR type and GIN operations
+Support `TSVECTOR` type and `GIN` operations
 
-String is the input and output type for the table API for TSVECTOR columns
+String is the input and output type for the table API for `TSVECTOR` columns
 
 Example supported https://www.postgresql.org/docs/current/textsearch-tables.html
 
@@ -19,7 +19,7 @@ CREATE TABLE PgWeb (
 );
 ```
 
-Add TSVECTOR column: to keep this column automatically up to date with its source data, use a stored generated column.
+Add `TSVECTOR` column: to keep this column automatically up to date with its source data, use a stored generated column.
 This example is a concatenation of title and body, using coalesce to ensure that one field will still be indexed when the other is NULL:
 
 ```sql
