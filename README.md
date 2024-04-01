@@ -28,6 +28,8 @@ ADD COLUMN textsearchable_index_col TSVECTOR
 GENERATED ALWAYS AS (to_tsvector('english', coalesce(title, '') || ' ' || coalesce(body, ''))) STORED;
 ```
 
+Data 
+
 ```
 Title: Neutrinos in the Sun
 Body: Neutrinos are subatomic particles produced in the core of the sun during nuclear fusion reactions.
@@ -39,6 +41,9 @@ Search: 'billion':20 'core':12 'detect':31 'earth':28 'everi':29 'fusion':18 'he
 ```
 
 *Not supported*
+
+* TSVector column type
+  * AWAITING MERGE https://github.com/cashapp/sqldelight/issues/5082
 
 ----
 
