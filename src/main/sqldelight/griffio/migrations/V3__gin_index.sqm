@@ -1,0 +1,5 @@
+CREATE INDEX pgweb_idx ON pgweb USING GIN (to_tsvector('english', title || ' ' || body));
+-- create a GIN index to speed up the search
+CREATE INDEX textsearch_idx ON pgweb USING GIN (textsearchable_index_col);
+
+

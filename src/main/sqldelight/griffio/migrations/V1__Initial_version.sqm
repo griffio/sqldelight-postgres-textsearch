@@ -1,0 +1,13 @@
+CREATE TABLE pgweb (
+   title TEXT,
+   body TEXT,
+   last_mod_date TIMESTAMPTZ
+);
+
+INSERT INTO pgweb (title, body)
+VALUES ('Neutrinos in the Sun', 'Neutrinos are subatomic particles produced in the core of the sun during nuclear fusion reactions. Billions of neutrinos pass through the sun and earth every second. Detecting solar neutrinos has helped reveal processes inside the sun.'),
+ ('The Sudbury Neutrino Detector', 'The Sudbury Neutrino Observatory in Ontario, Canada contains 1000 tons of heavy water to detect solar neutrinos. It provided the first conclusive evidence that neutrinos have mass and change type as they travel to earth. This helped solve the solar neutrino problem.'),
+ ('Weak Lensing Distorts the Universe', 'Gravitational lensing occurs when light from distant galaxies is distorted by the gravity of massive objects like galaxy clusters. Weak lensing slightly distorts galaxy shapes and allows mapping dark matter distribution in the universe.'),
+ ('Hot Gas and Dark Matter', 'Galaxy clusters contain not only galaxies but large amounts of hot gas and invisible dark matter. The gas is detectable in X-rays while dark matter is mapped through gravitational lensing. Their interaction reveals information about the composition of the universe.'),
+ ('Rafting for Solar Neutrinos', 'In the 1960s, physicist Ray Davis used a 100,000 gallon tank of perchloroethylene deep underground to detect solar neutrinos. This innovative experiment provided the first measurement of the solar neutrino flux, launching the field of neutrino astronomy'),
+ ('Weak Lensing Distorts the Universe', 'Gravitational lensing occurs when light from distant galaxies is distorted by the gravity of massive objects like galaxy clusters. Weak lensing slightly distorts galaxy shapes and allows mapping dark matter distribution in the universe.');

@@ -1,0 +1,4 @@
+-- to keep this column automatically up to date with its source data, use a stored generated column
+ALTER TABLE pgweb
+ADD COLUMN textsearchable_index_col TSVECTOR
+GENERATED ALWAYS AS (to_tsvector('english', coalesce(title, '') || ' ' || coalesce(body, ''))) STORED;

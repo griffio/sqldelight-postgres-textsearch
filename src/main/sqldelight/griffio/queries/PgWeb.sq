@@ -1,0 +1,20 @@
+bodySearchable:
+SELECT title
+FROM pgweb
+WHERE to_tsvector('english', body) @@ to_tsquery('english', ?)
+ORDER BY last_mod_date DESC
+LIMIT 10;
+
+titleBodySearchable:
+SELECT title
+FROM pgweb
+WHERE to_tsvector(title || ' ' || body) @@ to_tsquery(?)
+ORDER BY last_mod_date DESC
+LIMIT 10;
+
+textSearchable:
+SELECT title
+FROM pgweb
+WHERE textsearchable_index_col @@ to_tsquery(?)
+ORDER BY last_mod_date DESC
+LIMIT 10;
