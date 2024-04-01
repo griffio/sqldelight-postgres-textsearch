@@ -28,7 +28,7 @@ ADD COLUMN textsearchable_index_col TSVECTOR
 GENERATED ALWAYS AS (to_tsvector('english', coalesce(title, '') || ' ' || coalesce(body, ''))) STORED;
 ```
 
-Data 
+## Data 
 
 ```
 Title: Neutrinos in the Sun
@@ -38,6 +38,17 @@ Body: Neutrinos are subatomic particles produced in the core of the sun during n
 Search: 'billion':20 'core':12 'detect':31 'earth':28 'everi':29 'fusion':18 'help':35 'insid':38 'neutrino':1,5,22,33 
         'nuclear':17 'particl':8 'pass':23 'process':37 'produc':9 'reaction':19 'reveal':36 'second':30 'solar':32 
         'subatom':7 'sun':4,15,26,40
+```
+
+## Functions Supported 
+
+Use custom dialect for additional functions https://github.com/griffio/sqldelight-custom-dialect
+
+```
+ to_tsquery Text
+ to_tsvector TsVector
+ ts_rank REAL or TEXT (can only return one type)
+ websearch_to_tsquery Text
 ```
 
 *Not supported*
