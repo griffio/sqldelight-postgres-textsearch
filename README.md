@@ -55,6 +55,8 @@ Use custom dialect for additional functions https://github.com/griffio/sqldeligh
 
 * TSVector column type
   * MERGED https://github.com/cashapp/sqldelight/issues/5082
+* Gist Index and tsvector operator
+  * AWAITING FIX https://github.com/cashapp/sqldelight/issues/5059 
 
 ----
 
