@@ -54,7 +54,7 @@ Use custom dialect for additional functions https://github.com/griffio/sqldeligh
 *Not supported*
 
 * TSVector column type
-  * AWAITING MERGE https://github.com/cashapp/sqldelight/issues/5082
+  * MERGED https://github.com/cashapp/sqldelight/issues/5082
 
 ----
 
