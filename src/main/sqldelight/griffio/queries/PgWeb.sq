@@ -18,3 +18,10 @@ FROM pgweb
 WHERE textsearchable_index_col @@ to_tsquery(?)
 ORDER BY last_mod_date DESC
 LIMIT 10;
+
+regexSearch:
+SELECT title
+FROM pgweb
+WHERE body LIKE '%' || ? || '%'
+ORDER BY last_mod_date DESC
+LIMIT 10;

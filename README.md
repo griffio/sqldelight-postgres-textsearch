@@ -4,7 +4,13 @@ https://github.com/cashapp/sqldelight
 
 Snapshot version: 2.1.0-SNAPSHOT
 
-Support `TSVECTOR` type and `GIN` operations
+Support `TSVECTOR` type, `GIST` and `GIN` operations
+
+The pg_trgm module provides GiST and GIN index operator classes that allow you to create an index over a text column for the purpose of very fast similarity searches
+
+```sql
+CREATE EXTENSION pg_trgm;
+```
 
 String is the input and output type for the table API for `TSVECTOR` columns
 
