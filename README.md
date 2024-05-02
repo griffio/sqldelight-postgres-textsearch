@@ -64,7 +64,7 @@ Use custom dialect for additional functions https://github.com/griffio/sqldeligh
 * Gist Index and tsvector operator
   * MERGED https://github.com/cashapp/sqldelight/issues/5059 
 * RegEx operators
-  * AWAITING MERGE https://github.com/cashapp/sqldelight/issues/5137
+  * MERGED https://github.com/cashapp/sqldelight/issues/5137
 
 ----
 
