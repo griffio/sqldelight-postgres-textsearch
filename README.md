@@ -69,8 +69,8 @@ Use custom dialect for additional functions https://github.com/griffio/sqldeligh
 ----
 
 ```shell
-createdb textsearches
-./gradlew build
+createdb textsearches &&
+./gradlew build &&
 ./gradlew flywayMigrate
 ```
 
