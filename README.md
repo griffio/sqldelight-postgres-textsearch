@@ -48,13 +48,12 @@ Search: 'billion':20 'core':12 'detect':31 'earth':28 'everi':29 'fusion':18 'he
 
 ## Functions Supported 
 
-Use custom dialect for additional functions https://github.com/griffio/sqldelight-custom-dialect
-
 ```
- to_tsquery Text
+ to_tsquery TsQuery
+ plainto_tsquery TsQuery 
+ websearch_to_tsquery TsQuery
  to_tsvector TsVector
- ts_rank REAL or TEXT (can only return one type)
- websearch_to_tsquery Text
+ ts_rank REAL
 ```
 
 *Not supported*
@@ -65,7 +64,8 @@ Use custom dialect for additional functions https://github.com/griffio/sqldeligh
   * MERGED https://github.com/cashapp/sqldelight/issues/5059 
 * RegEx operators
   * MERGED https://github.com/cashapp/sqldelight/issues/5137
-
+* Add TSQUERY data type
+  * MERGED https://github.com/sqldelight/sqldelight/pull/5779 
 ----
 
 ```shell
