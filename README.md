@@ -1,8 +1,8 @@
-# SqlDelight 2.1.x Postgresql Text Search support 
+# SqlDelight 2.2.x Postgresql Text Search support 
 
 https://github.com/cashapp/sqldelight
 
-Snapshot version: 2.1.0-SNAPSHOT
+Snapshot version: 2.2.0-SNAPSHOT
 
 Support `TSVECTOR` type, `GIST` and `GIN` operations
 
