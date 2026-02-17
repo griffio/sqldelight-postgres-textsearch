@@ -2,7 +2,7 @@
 
 https://github.com/cashapp/sqldelight
 
-Snapshot version: 2.2.0-SNAPSHOT
+Version: 2.2.1
 
 Support `TSVECTOR` type, `GIST` and `GIN` operations
 
